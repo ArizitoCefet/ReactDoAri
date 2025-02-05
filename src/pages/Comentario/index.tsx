@@ -8,9 +8,9 @@ export function Comentario() {
       {dados.map(item => (
         <ComponentCard
           key={item.id}
+          titulo={item.titulo}
           data={item.data}
-          assunto={item.assunto}
-          comentario={item.comentario}
+          img={item.img}
         />
       ))}
     </S.Section>
